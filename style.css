@@ -1,0 +1,43 @@
+body {
+	background-color: white;
+}
+
+html {
+	height: 100%;
+}
+
+.sedans {
+	grid-area: S;
+	background-color: indianred;
+}
+
+.suvs {
+	grid-area: U;
+	background-color: tomato;
+}
+
+.luxury {
+	grid-area: L;
+	background-color: linen;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template: 
+		"S" auto
+		"U"	auto
+		"L" auto;
+}
+
+@media (min-width: 375px) {
+	.grid-container {
+		grid-template:
+			"S	U  L" auto;
+			margin-top: 300px;
+	}
+}
+
+
+
+
